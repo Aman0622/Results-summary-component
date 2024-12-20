@@ -1,0 +1,274 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  display: flex;
+  background-color: hsl(221, 100%, 96%);
+}
+
+#maindiv {
+  height: 400px;
+  width: 38%;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10em;
+  background-color: white;
+  border-radius: 20px;
+}
+
+#contaner {
+  height: 100%;
+  width: 50%;
+  border-radius: 20px;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: white;
+}
+
+h3 {
+  color: hsl(241, 100%, 89%);
+  font-size: 22px;
+  margin-top: 1em;
+}
+
+#contaner + p {
+  font-size: 18px;
+}
+
+#num {
+  height: 150px;
+  width: 55%;
+  margin: 0 auto;
+  border-radius: 80px;
+  text-align: center;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+
+#num > p {
+  margin-top: 1em;
+}
+
+#seven {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+h2 + p {
+  margin-left: 2em;
+  width: 80%;
+}
+
+#contaner2 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
+  gap: 1.3em;
+}
+
+#contaner2 > h2 {
+  margin-left: 1em;
+}
+
+.box {
+  height: 40px;
+  width: 85%;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-left: 1em;
+  display: flex;
+  align-items: center;
+}
+
+#marks1 {
+  margin-left: 3em;
+  color: black;
+}
+
+#marks2 {
+  margin-left: 3em;
+  color: black;
+}
+
+#marks3 {
+  margin-left: 4em;
+  color: black;
+}
+
+#marks4 {
+  margin-left: 4.5em;
+  color: black;
+}
+
+#icon {
+  margin-left: 1em;
+}
+
+.box1 {
+  background-color: hsl(0, 82%, 87%);
+  color: hsl(0, 100%, 67%);
+}
+
+.box2 {
+  background-color: rgb(244, 229, 202);
+  color: hsl(39, 100%, 56%);
+}
+
+.box3 {
+  color: hsl(166, 100%, 37%);
+  background-color: hsl(166, 74%, 86%);
+}
+
+.box4 {
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(234, 82%, 89%);
+}
+
+button {
+  width: 85%;
+  height: 40px;
+  margin-top: 1em;
+  margin-left: 1.5em;
+  border-radius: 30px;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(241, 100%, 89%);
+}
+
+@media screen and (max-width: 1400px) {
+  #maindiv {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1130px) {
+  #maindiv {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 947px) {
+  #maindiv {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 712px) {
+  #maindiv {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 630px) {
+  #maindiv {
+    width: 90%;
+  }
+  #contaner {
+    width: 45%;
+  }
+  #contaner2 {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  #maindiv {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: 0 auto;
+    background-color: white;
+  }
+  #contaner {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  #contaner2 {
+    width: 100%;
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  #maindiv {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 420px) {
+  #maindiv {
+    width: 90%;
+  }
+}
